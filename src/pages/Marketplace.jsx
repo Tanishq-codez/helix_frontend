@@ -84,9 +84,9 @@ const Marketplace = () => {
         {/* Hero Content */}
         <Box position="relative" zIndex="1" maxW="1400px" mx="auto">
           <Badge
-            bg="rgba(49,130,206,0.2)"
-            color="#63B3ED"
-            border="1px solid rgba(99,179,237,0.3)"
+            bg="rgba(255,255,255,0.1)"
+            color="#CBD5E0"
+            border="1px solid rgba(255,255,255,0.2)"
             px="3"
             py="1"
             borderRadius="full"
@@ -190,7 +190,8 @@ const Marketplace = () => {
           </Flex>
 
           <Button
-            bg="linear-gradient(135deg, #2B6CB0, #3182CE)"
+            bg="linear-gradient(135deg, #0F172A, #1E293B)"
+            border="1px solid rgba(255,255,255,0.1)"
             color="white"
             size="lg"
             h="14"
@@ -198,10 +199,11 @@ const Marketplace = () => {
             borderRadius="xl"
             fontWeight="800"
             fontSize="md"
-            shadow="0 4px 20px rgba(49,130,206,0.4)"
+            shadow="0 4px 20px rgba(15,23,42,0.4)"
             _hover={{
               transform: "translateY(-2px)",
-              shadow: "0 8px 30px rgba(49,130,206,0.5)",
+              shadow: "0 8px 30px rgba(15,23,42,0.5)",
+              bg: "linear-gradient(135deg, #1E293B, #334155)"
             }}
             transition="all 0.3s"
           >
@@ -356,7 +358,7 @@ const Marketplace = () => {
                       borderRadius="xl"
                       cursor="pointer"
                       position="relative"
-                      bg={isSelected ? "linear-gradient(135deg, #2B6CB0, #3182CE)" : "transparent"}
+                      bg={isSelected ? "linear-gradient(135deg, #0F172A, #1E293B)" : "transparent"}
                       color={isSelected ? "white" : "#1E293B"}
                       fontWeight={isSelected ? "800" : "600"}
                       _hover={!isSelected ? { bg: "#F1F5F9" } : {}}
@@ -371,7 +373,7 @@ const Marketplace = () => {
                           w="1.5"
                           h="1.5"
                           borderRadius="full"
-                          bg="#3182CE"
+                          bg="#0F1B2D"
                         />
                       )}
                       {hasBooking && isSelected && (
@@ -419,14 +421,16 @@ const Marketplace = () => {
                     <Flex justify="space-between" align="flex-start" mb="4">
                       <Box>
                         <Badge
-                          bg="#DBEAFE"
-                          color="#2B6CB0"
+                          bg="#F1F5F9"
+                          color="#334155"
                           px="2"
                           py="1"
                           borderRadius="md"
                           fontSize="9px"
                           fontWeight="800"
                           mb="2"
+                          border="1px solid"
+                          borderColor="#E2E8F0"
                         >
                           UPCOMING CALL
                         </Badge>
@@ -435,7 +439,7 @@ const Marketplace = () => {
                         </Text>
                       </Box>
                       <Box textAlign="right">
-                        <Text fontSize="lg" fontWeight="900" color="#2B6CB0">
+                        <Text fontSize="lg" fontWeight="900" color="#0F1B2D">
                           10:30 AM
                         </Text>
                         <Text fontSize="xs" color="#64748B" fontWeight="600">
@@ -504,14 +508,16 @@ const Marketplace = () => {
                     <Flex justify="space-between" align="flex-start" mb="4">
                       <Box>
                         <Badge
-                          bg="#DBEAFE"
-                          color="#2B6CB0"
+                          bg="#F1F5F9"
+                          color="#334155"
                           px="2"
                           py="1"
                           borderRadius="md"
                           fontSize="9px"
                           fontWeight="800"
                           mb="2"
+                          border="1px solid"
+                          borderColor="#E2E8F0"
                         >
                           SCHEDULED
                         </Badge>
@@ -520,7 +526,7 @@ const Marketplace = () => {
                         </Text>
                       </Box>
                       <Box textAlign="right">
-                        <Text fontSize="lg" fontWeight="900" color="#2B6CB0">
+                        <Text fontSize="lg" fontWeight="900" color="#0F1B2D">
                           2:00 PM
                         </Text>
                         <Text fontSize="xs" color="#64748B" fontWeight="600">
@@ -565,14 +571,14 @@ const Marketplace = () => {
                     You have no active bookings for this date.
                   </Text>
                   <Button
-                    bg="linear-gradient(135deg, #2B6CB0, #3182CE)"
+                    bg="linear-gradient(135deg, #0F172A, #1E293B)"
                     color="white"
                     h="12"
                     px="6"
                     borderRadius="xl"
                     fontWeight="700"
-                    shadow="0 4px 12px rgba(49,130,206,0.3)"
-                    _hover={{ transform: "translateY(-1px)", shadow: "0 6px 16px rgba(49,130,206,0.4)" }}
+                    shadow="0 4px 12px rgba(15,23,42,0.3)"
+                    _hover={{ transform: "translateY(-1px)", shadow: "0 6px 16px rgba(15,23,42,0.4)" }}
                   >
                     Book a Consultation
                   </Button>
